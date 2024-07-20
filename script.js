@@ -34,7 +34,7 @@ inputPlayer1.addEventListener("keyup", () => {
   player1 = new Player(inputPlayer1.value, 100);
   name1.innerText = `${player1.name}👱‍♂️`;
   power1.innerText = `⚡${player1.power}`;
-  if(inputPlayer1.value == '' ){
+  if (inputPlayer1.value == "") {
     name1.innerText = `Player 1`;
     power1.innerText = `---`;
   }
@@ -44,7 +44,7 @@ inputPlayer2.addEventListener("keyup", () => {
   player2 = new Player(inputPlayer2.value, 100);
   name2.innerText = `${player2.name}🧑`;
   power2.innerText = `⚡${player2.power}`;
-  if(inputPlayer2.value == '' ){
+  if (inputPlayer2.value == "") {
     name2.innerText = `Player 2`;
     power2.innerText = `---`;
   }
@@ -101,7 +101,7 @@ document.addEventListener("keyup", (e) => {
           player2heal.play();
         } else if (player2.power == 100) {
           error.play();
-          console.log('full power')
+          console.log("full power");
         }
       } else {
         console.log("Error! Enter a valid letter");

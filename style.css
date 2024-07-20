@@ -80,7 +80,6 @@ input{
 
 input:focus{
     border: 2px solid rgba(104, 141, 255, 0.269) ;
-    width: 200px;
     border-radius: 50px;
     padding: 8px 15px;
     transform: scale(1.03);
@@ -137,4 +136,13 @@ a{
 
 a:hover{
     color: gold;
+}
+
+@media only screen and (max-width: 768px){
+    input{
+        width: 100px;
+    }
+    video{
+        width: 150px;
+    }
 }
