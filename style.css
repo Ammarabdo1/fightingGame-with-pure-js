@@ -1,0 +1,140 @@
+.allVideos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+}
+
+.video-container {
+    position: relative;
+    /* width: 50%; */
+    max-width: 800px;
+    overflow: hidden;
+    /* border-radius: 15px; */
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); */
+}
+
+video {
+    width: 300px;
+    height: auto;
+    display: block;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: white; */
+    /* font-size: 2rem; */
+    /* background: rgba(255, 255, 255, 0.219); */
+    /* opacity: 0; */
+    /* transition: opacity 0.3s ease; */
+}
+
+#rightVideo{
+    transform: rotateY(180deg);
+}
+
+audio{
+    display: none;
+}
+
+.overlayWin{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(255, 255, 255, 0); */
+    backdrop-filter: blur(5px);
+    display: none;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+input{
+    border: none;
+    outline: none;
+    width: 200px;
+    border-radius: 50px;
+    padding: 8px 15px;
+    box-shadow: 0px 0px 3px 2px rgba(204, 204, 204, 0.311);
+    transition: all .3s ease
+}
+
+input:focus{
+    border: 2px solid rgba(104, 141, 255, 0.269) ;
+    width: 200px;
+    border-radius: 50px;
+    padding: 8px 15px;
+    transform: scale(1.03);
+    /* box-shadow: 0px 0px 0px 0px rgba(204, 204, 204, 0.311); */
+}
+
+#attack{
+    margin-bottom: 40px;
+}
+
+#Heal{
+    margin-bottom: 40px;
+}
+
+
+#attack span{
+    color: white;
+    background-color: rgba(24, 125, 68, 0.523);
+    padding:3px 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+#Heal span{
+    color: white;
+    background-color: rgba(196, 53, 53, 0.523);
+    padding:3px 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    outline:none;
+    background-color: #4593a0;
+    border-radius: 10px;
+    color: rgb(234, 234, 234);
+    transition: all .2s ease;
+}
+
+button:hover{
+    transform: scale(1.05);
+    background-color: #4ca8b8;
+    border-radius: 10px;
+    color: gold;
+}
+
+a{
+    margin-top: 10px;
+    cursor:pointer;
+    color: gray;
+}
+
+a:hover{
+    color: gold;
+}

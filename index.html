@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="allVideos">
+        <div class="leftPlayer">
+            <input type="text" id="inputPlayer1" placeholder="Enter player1's name" autocomplete="off">
+            <h3 id="name1">Player 1</h3>
+            <div class="video-container">
+                <video id="leftVideo" autoplay loop>
+                    <source src="videos/Stay.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+                <p id="attack">💥 Q: <span>Attack</span></p>
+                <p id="Heal">🔋 A: <span>Heal</span></p>
+                <h1 id="power1">---</h1>                
+
+        </div>
+
+
+        <div class="rightPlayer">
+            <input type="text" id="inputPlayer2" placeholder="Enter player2's name" autocomplete="off">
+            <h3 id="name2">Player 2</h3>
+            <div class="video-container">
+                <video id="rightVideo" autoplay loop>
+                    <source src="videos/Stay.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+            <p id="attack">💥 P: <span>Attack</span></p>
+            <p id="Heal">🔋 L: <span>Heal</span></p>
+            <h1 id="power2">---</h1>
+        </div>
+
+        <div class="overlayWin">
+            <div class="info">
+                <div>
+                    <h2>🎉✨</h2>
+                    <h1 id="winner"></h1>
+                    <button onclick="Again()">Play Again 🎯</button>                    
+                    <div><a onclick="reload()">New game 🚀</a>     </div>               
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <audio id="player1hit" controls  src="audios/fastpunch.mp3"> </audio>
+    <audio id="player2hit" controls  src="audios/quickhit.mp3"></audio>
+
+    <audio id="player1heal" controls  src="audios/fastheal.mp3"></audio>
+    <audio id="player2heal" controls  src="audios/quickheal.mp3"></audio>
+
+    <audio id="victory" controls  src="audios/victory.mp3"></audio>
+    <audio id="error" controls  src="audios/error.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
